@@ -1,43 +1,4 @@
-
-.nav {
-    width: 250px;
-    background-color: #ffffff; 
-    padding: 1px;
-    box-shadow: 2px 0 1px rgba(0,0,0,0.1); 
-    height: 100%;
-  }
-  
-
-  .nav-item {
-    margin-bottom: 15px; 
-    
-  }
-  
-  .nav-item:last-child {
-    margin-bottom: 0; 
-  }
-
-  .nav-link {
-    display: block;
-    color: #007bff;
-    text-decoration: none; 
-    padding: 15px 15px;
-    border-radius: 2px; 
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .nav-link:hover {
-    background-color: #ece9ef;
-    color: #0056b3;
-  }
-  
-  .nav-link:active {
-    background-color: #007bff; 
-    color: #fff; 
-  }
-   
-  /* tutorial.css */
-/* Reset default styles */
+/* Default styles */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +18,6 @@ body {
 /* Container for each page */
 .content-wrapper {
   width: 100%;
- 
   margin: 30px auto;
   padding: 25px;
   background: #ffffff;
@@ -119,12 +79,11 @@ pre {
   padding: 20px;
   border-radius: 8px;
   overflow-x: auto;
-  font-size: 14px; /* Adjust font size for smaller screens */
+  font-size: 14px; /* Default font size for smaller screens */
   line-height: 1.4; /* Adjust line height for readability */
   white-space: pre-wrap; /* Allow wrapping of long lines */
   word-wrap: break-word; /* Ensure long words break appropriately */
 }
-
 
 code {
   font-family: 'Courier New', Courier, monospace;
@@ -157,3 +116,24 @@ pre code {
   background-color: #3498db;
   color: #ffffff;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  h3 {
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+
+  p,
+  ul {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  pre {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
