@@ -346,7 +346,7 @@ import PythonIterators from './components/Python Iterators';
 import PythonPolymorphism from './components/Python Polymorphism';
 import PythonScope from './components/Python Scope';
 import PythonModules from './components/Python Modules';
-import LandingPage from './components/LandingPage'; 
+
 import PythonDates from './components/Python Dates';
 import PythonMath from './components/Python Math';
 import PythonJSON from './components/Python JSON';
@@ -632,8 +632,7 @@ return (
         <Sidebar topics={topics} show={showSidebar} handleClose={handleToggleSidebar} />
         <Col md={{ span: 9, offset: showSidebar ? 3 : 0 }}>
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/tutorials" element={<MainContent />} />
+            <Route path="/" element={<MainContent />} />
             {topics.map(topic => (
               <Route key={topic.id} path={topic.path} element={React.createElement(topic.component)} />
             ))}
